@@ -3,6 +3,7 @@
 yum install docker
 systemctl start docker
 systemctl enable docker
+chkconfig docker on
 ```
 
 ## provide permissions to jenkins user in jenkins server to access docker
