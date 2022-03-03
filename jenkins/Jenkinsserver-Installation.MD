@@ -48,6 +48,7 @@ systemctl start jenkins
 
 # Setup Jenkins to start at boot,
 systemctl enable jenkins
+chkconfig jenkins on
 ```
 
 #### Accessing Jenkins
@@ -67,8 +68,8 @@ http://YOUR-SERVER-PUBLIC-IP:8080
 - Create another admin user id
 
 ### Test Jenkins Jobs
-1. Create ìnew itemî
-1. Enter an item name ñ `My-First-Project`
+1. Create ‚Äúnew item‚Äù
+1. Enter an item name ‚Äì `My-First-Project`
    - Chose `Freestyle` project
 1. Under Build section
 	Execute shell : echo "Welcome to Jenkins Demo"
